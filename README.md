@@ -1,7 +1,7 @@
 
 # SWAPI Vehicle Management
 
-Este projeto implementa um serviço web para gerenciar veículos da franquia Star Wars. Ele permite listar, adicionar, excluir e buscar veículos na base de dados local, bem como buscar veículos diretamente da API SWAPI. Utiliza Flask como framework web e SQLAlchemy para manipulação do banco de dados.
+Este projeto implementa um serviço web para gerenciar veículos da franquia Star Wars. Ele permite listar, adicionar, excluir e buscar veículos,personagens,filmes,naves,planetas,especies e favoritos na base de dados local, bem como buscar veículos,personagens,filmes,naves,planetas e especies diretamente da API SWAPI. Utiliza Flask como framework web e SQLAlchemy para manipulação do banco de dados.
 
 ## Requisitos
 
