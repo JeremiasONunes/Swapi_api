@@ -1,5 +1,5 @@
 import pytest
-from Routes.app import create_app, db   # Importando a função de criação do app e db
+from Routes.app import create_app, db  # Importando do diretório Routes
 from flask import jsonify
 
 @pytest.fixture
