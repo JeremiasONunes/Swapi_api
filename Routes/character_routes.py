@@ -13,8 +13,8 @@
 
 # Copyright © 2024 Jeremias Nunes. All rights reserved.
 # -----------------------------------------------------------------------------
-from flask import Blueprint, jsonify, request, abort  # 'request' é o correto em vez de 'requests'
-import requests  # Se você precisa usar a biblioteca requests para fazer requisições HTTP
+from flask import Blueprint, jsonify, request, abort 
+import requests  
 
 from models import db, Character
 
