@@ -12,6 +12,7 @@
 # web framework and SQLAlchemy for database handling.
 
 # Copyright © 2024 Jeremias Nunes. All rights reserved.
+# Copyright © 2024 Rafael Mesquita. All rights reserved.
 # -----------------------------------------------------------------------------
 
 from flask import Blueprint, abort, jsonify, request
