@@ -156,26 +156,20 @@ class Vehicle(db.Model):
 class Favorite(db.Model):
     __tablename__ = 'favorites'
     
-    id = db.Column(db.Integer, primary_key=True)  # ID único para o favorito
-    character_id = db.Column(db.Integer, db.ForeignKey('characters.id'), nullable=False)
-    movie_id = db.Column(db.Integer, db.ForeignKey('movies.id'), nullable=True)
-    starship_id = db.Column(db.Integer, db.ForeignKey('starships.id'), nullable=True)
-    vehicle_id = db.Column(db.Integer, db.ForeignKey('vehicles.id'), nullable=True)
-    species_id = db.Column(db.Integer, db.ForeignKey('species.id'), nullable=True)
-    
+    id = db.Column(db.Integer, primary_key=True)
+    character_id = db.Column(db.Integer, nullable=False)
+    movie_id = db.Column(db.Integer, nullable=True)
+    starship_id = db.Column(db.Integer, nullable=True)
+    vehicle_id = db.Column(db.Integer, nullable=True)
+    species_id = db.Column(db.Integer, nullable=True)
+    planet_id = db.Column(db.Integer, nullable=True)
     student_name1 = db.Column(db.String(100), nullable=False)
-    registration1 = db.Column(db.String(100), nullable=False)
+    registration1 = db.Column(db.String(50), nullable=False)
     student_name2 = db.Column(db.String(100), nullable=True)
-    registration2 = db.Column(db.String(100), nullable=True)
-    course = db.Column(db.String(100), nullable=True)
-    university = db.Column(db.String(100), nullable=True)
-    period = db.Column(db.String(100), nullable=True)
-
-    character = db.relationship('Character', backref='favorites')
-    movie = db.relationship('Movie', backref='favorites')
-    starship = db.relationship('Starship', backref='favorites')
-    vehicle = db.relationship('Vehicle', backref='favorites')
-    species = db.relationship('Species', backref='favorites')
+    registration2 = db.Column(db.String(50), nullable=True)
+    course = db.Column(db.String(100), nullable=False)
+    university = db.Column(db.String(100), nullable=False)
+    period = db.Column(db.String(50), nullable=False)
 
     def __repr__(self):
-        return f'<Favorite(character_name={self.character_id})>'
+        return f'<Favorite(character_id={self.character_id})>'

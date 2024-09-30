@@ -4,9 +4,9 @@ from models import db  # Importação do db
 # Importações dos Blueprints
 from Routes.character_routes import character_bp
 from Routes.movie_routes import movie_bp
-##from Routes.planet_routes import planet_bp
+from Routes.planet_routes import planet_bp
 from Routes.starship_routes import starship_bp
-##from Routes.species_routes import species_bp
+from Routes.species_routes import species_bp
 from Routes.vehicle_routes import vehicle_bp
 from Routes.favorite_routes import favorite_bp
 
@@ -19,9 +19,9 @@ def create_app():
     # Registro dos Blueprints
     app.register_blueprint(character_bp)
     app.register_blueprint(movie_bp)
-#    app.register_blueprint(planet_bp)
+    app.register_blueprint(planet_bp)
     app.register_blueprint(starship_bp)
-#    app.register_blueprint(species_bp)
+    app.register_blueprint(species_bp)
     app.register_blueprint(vehicle_bp)
     app.register_blueprint(favorite_bp)
 
