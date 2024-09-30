@@ -49,9 +49,6 @@ def save_favorite():
     for field in optional_fields:
         data[field] = data.get(field, None)
 
-    # Remove 'starship_id' se for None
-    data.pop('starship_id', None)
-
     # Salva o novo favorito
     new_favorite = save_record(Favorite, data)
     return jsonify({"message": "Favorito salvo com sucesso!", "id": new_favorite.id}), 201
