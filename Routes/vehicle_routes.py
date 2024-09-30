@@ -12,6 +12,7 @@
 # Flask is used as the web framework, and SQLAlchemy is used for database handling.
 
 # Copyright © 2024 Jeremias Nunes. All rights reserved.
+# Copyright © 2024 Rafael Mesquita. All rights reserved.
 # -----------------------------------------------------------------------------
 from flask import Blueprint, jsonify, request, abort
 import requests
