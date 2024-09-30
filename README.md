@@ -19,7 +19,7 @@ Siga os passos abaixo para instalar e configurar o projeto no Windows:
 Abra o Prompt de Comando (cmd) e navegue até o diretório onde deseja clonar o repositório. Em seguida, execute o comando:
 
 ```bash
-git clone https://github.com/seu_usuario/seu_repositorio.git
+git clone https://github.com/JeremiasONunes/Swapi_api
 ```
 
 ### 2. Navegue até o Diretório do Projeto
@@ -27,7 +27,7 @@ git clone https://github.com/seu_usuario/seu_repositorio.git
 Entre no diretório do projeto clonado:
 
 ```bash
-cd seu_repositorio
+cd Swapi_api
 ```
 
 ### 3. Crie um Ambiente Virtual
