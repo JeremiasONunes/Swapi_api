@@ -96,6 +96,135 @@ Você pode acessar a API em seu navegador ou usando ferramentas como Postman ou 
 GET http://127.0.0.1:5000/veiculos
 ```
 
+
+Abaixo contem uma lista de Exemplos de Json para demostração do Post
+
+##Json
+
+#Personagem
+```
+{
+  "name": "Luke Skywalker",
+  "height": "172",
+  "mass": "77",
+  "hair_color": "blond",
+  "skin_color": "fair",
+  "eye_color": "blue",
+  "birth_year": "19BBY",
+  "gender": "male",
+  "homeworld": "https://swapi.dev/api/planets/1/",
+  "films": ["https://swapi.dev/api/films/1/", "https://swapi.dev/api/films/2/"],
+  "species": [],
+  "vehicles": ["https://swapi.dev/api/vehicles/14/"],
+  "starships": ["https://swapi.dev/api/starships/12/"]
+}
+```
+#Favorito
+```
+{
+  "character_id": 1,
+  "student_name1": "John Doe",
+  "registration1": "123456",
+  "movie_id": 2,
+  "starship_id": 5,
+  "vehicle_id": 3,
+  "species_id": 4,
+  "planet_id": 6,
+  "student_name2": "Jane Doe",
+  "registration2": "654321",
+  "course": "Computer Science",
+  "university": "XYZ University",
+  "period": "2024-01"
+}
+
+```
+#filmes
+```
+{
+  "title": "A New Hope",
+  "episode_id": 4,
+  "opening_crawl": "It is a period of civil war...",
+  "director": "George Lucas",
+  "producer": "Gary Kurtz, Rick McCallum",
+  "release_date": "1977-05-25",
+  "characters": ["https://swapi.dev/api/people/1/", "https://swapi.dev/api/people/2/"],
+  "planets": ["https://swapi.dev/api/planets/1/"],
+  "starships": ["https://swapi.dev/api/starships/2/"],
+  "vehicles": ["https://swapi.dev/api/vehicles/4/"],
+  "species": ["https://swapi.dev/api/species/1/"]
+}
+
+
+```
+
+#planetas
+```
+{
+  "name": "Tatooine",
+  "rotation_period": "23",
+  "orbital_period": "304",
+  "diameter": "10465",
+  "climate": "arid",
+  "gravity": "1 standard",
+  "terrain": "desert",
+  "surface_water": "1",
+  "population": "200000"
+}
+```
+
+#espécies
+```
+{
+  "name": "Wookiee",
+  "classification": "mammal",
+  "designation": "sentient",
+  "average_height": "230",
+  "skin_colors": ["brown", "black", "white"],
+  "hair_colors": ["brown", "black"],
+  "eye_colors": ["blue", "green"],
+  "average_lifespan": "400",
+  "language": "Shyriiwook"
+}
+
+```
+
+#naves
+```
+{
+  "name": "Millennium Falcon",
+  "model": "YT-1300 light freighter",
+  "manufacturer": "Corellian Engineering Corporation",
+  "cost_in_credits": "100000",
+  "length": "34.37",
+  "max_atmosphering_speed": "1050",
+  "crew": "4",
+  "passengers": "6",
+  "cargo_capacity": "100000",
+  "consumables": "2 months",
+  "hyperdrive_rating": "0.5",
+  "MGLT": "75",
+  "starship_class": "Light freighter"
+}
+```
+
+#Veiculos
+```
+{
+  "name": "Speeder Bike",
+  "model": "74-Z speeder bike",
+  "manufacturer": "SoroSuub Corporation",
+  "cost_in_credits": "8000",
+  "length": "3",
+  "max_atmosphering_speed": "500",
+  "crew": "1",
+  "passengers": "1",
+  "cargo_capacity": "4",
+  "consumables": "none",
+  "vehicle_class": "speeder"
+}
+
+```
+
 ## Contribuição
 
 Sinta-se à vontade para contribuir para este projeto. Abra um pull request ou envie um issue se encontrar algum problema.
