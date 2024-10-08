@@ -207,7 +207,7 @@ Abaixo contem uma lista de Exemplos de Json para demostração do Post
 }
 ```
 
-# Veiculos
+# Veículos
 ```
 {
   "name": "Speeder Bike",
